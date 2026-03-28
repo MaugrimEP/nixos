@@ -2,7 +2,7 @@
   flake.nixosModules.thinkpad_litisConfiguration = { config, pkgs, lib, ... }: {
 
 imports =
-[ # Include the results of the hardware scan.
+[ 
   self.nixosModules.thinkpad_litisHardware
 ];
 
@@ -11,11 +11,6 @@ boot.loader.systemd-boot.enable = true;
 boot.loader.efi.canTouchEfiVariables = true;
 
 networking.hostName = "nixos"; # Define your hostname.
-# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-# Configure network proxy if necessary
-# networking.proxy.default = "http://user:password@proxy:port/";
-# networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
 # Enable networking
 networking.networkmanager.enable = true;
@@ -62,8 +57,6 @@ enable = true;
 alsa.enable = true;
 alsa.support32Bit = true;
 pulse.enable = true;
-# If you want to use JACK applications, uncomment this
-#jack.enable = true;
 
 # use the example session manager (no others are packaged yet so this is enabled by default,
 # no need to redefine it in your config for now)
@@ -75,29 +68,66 @@ pulse.enable = true;
 
 # Define a user account. Don't forget to set a password with ‘passwd’.
 users.users.tmayet = {
-isNormalUser = true;
-description = "tmayet";
-extraGroups = [ "networkmanager" "wheel" ];
-packages = with pkgs; [
-#  thunderbird
-];
+  isNormalUser = true;
+  description = "tmayet";
+  extraGroups = [ "networkmanager" "wheel" ];
+  packages = with pkgs; [
+  #  thunderbird
+  ];
 };
-
-# Install firefox.
-programs.firefox.enable = true;
 
 # Allow unfree packages
 nixpkgs.config.allowUnfree = true;
 
+programs.zsh = {
+  enable = true;
+  enableCompletion = true;
+  enableBashCompletion = true;
+  autosuggestions.enable = true;
+  syntaxHighlighting.enable = true;
+  histSize = 1000000;
+};
+
 # List packages installed in system profile. To search, run:
 # $ nix search wget
 environment.systemPackages = with pkgs; [
-  vim
-  neovim
-  git
-  tree
+  ascii-image-converter
+  bat
+  claude-code
   firefox
+  git
+  google-chrome
+  inotify-tools
+  jetbrains.pycharm
+  just
+  neovim
+  nerd-fonts.jetbrains-mono
+  obsidian
+  tectonic
+  television
+  tree
+  typst
+  vim
+  vscode
   wget
+  yazi
+];
+
+programs.neovim.enable = true;
+programs.neovim.defaultEditor = true;
+
+programs.git = {
+  enable = true;
+  package = pkgs.git.override { withLibsecret = true; };
+  config = { 
+    credential.helper = "libsecret";
+  };
+};
+
+fonts.packages = with pkgs; [
+  dejavu_fonts
+  liberation_ttf
+  nerd-fonts.fira-code
 ];
 
 # Some programs need SUID wrappers, can be configured further or are
