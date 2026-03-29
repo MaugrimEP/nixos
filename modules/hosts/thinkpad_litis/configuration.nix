@@ -89,6 +89,7 @@ environment.systemPackages = with pkgs; [
   ascii-image-converter
   bat
   claude-code
+  discord
   firefox
   git
   google-chrome
@@ -106,6 +107,7 @@ environment.systemPackages = with pkgs; [
   vscode
   wget
   yazi
+  zoom-us
 ];
 
 programs.neovim.enable = true;
