@@ -60,6 +60,9 @@ nixpkgs.config.allowUnfree = true;
 # Enable zsh at system level (required for login shell)
 programs.zsh.enable = true;
 
+# Enable nix-ld for running unpatched dynamic binaries
+programs.nix-ld.enable = true;
+
 # Fonts
 fonts.packages = with pkgs; [
   dejavu_fonts
