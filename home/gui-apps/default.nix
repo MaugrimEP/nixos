@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  imports = [
+    ./kitty
+  ];
+
   home.packages = with pkgs; [
     discord
     firefox
