@@ -9,6 +9,7 @@
     television
     tree
     typst
+    uv
     vim
     wget
     yazi

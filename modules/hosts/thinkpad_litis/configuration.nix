@@ -57,6 +57,9 @@ users.users.tmayet = {
 # Allow unfree packages
 nixpkgs.config.allowUnfree = true;
 
+# Enable flakes and nix-command globally
+nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 # Enable zsh at system level (required for login shell)
 programs.zsh.enable = true;
 
