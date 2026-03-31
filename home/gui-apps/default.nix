@@ -14,5 +14,6 @@
     obsidian
     vscode
     zoom-us
+    zotero
   ];
 }
