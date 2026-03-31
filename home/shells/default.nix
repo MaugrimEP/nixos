@@ -5,5 +5,5 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     history.size = 1000000;
-  };
+};
 }

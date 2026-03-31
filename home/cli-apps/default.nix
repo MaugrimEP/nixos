@@ -21,6 +21,7 @@
   ];
 
   imports = [
+    ./ghostscript.nix
     ./git.nix
     ./neovim.nix
   ];
