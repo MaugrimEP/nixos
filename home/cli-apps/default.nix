@@ -1,10 +1,13 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     ascii-image-converter
     bat
     claude-code
+    fzf
     inotify-tools
     just
+    ripgrep
     tectonic
     television
     tree
