@@ -5,6 +5,7 @@
     bat
     claude-code
     fzf
+    ghostscript
     inotify-tools
     just
     ripgrep
@@ -12,6 +13,7 @@
     television
     tree
     typst
+    unzip
     uv
     vim
     wget
