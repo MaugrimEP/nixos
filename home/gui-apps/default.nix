@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./caelestia.nix
     ./gnome.nix
     ./kitty
   ];

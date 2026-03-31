@@ -6,6 +6,7 @@
       useUserPackages = true;
       backupFileExtension = "hm-backup";
       extraSpecialArgs = { inherit inputs self; };
+      sharedModules = [ inputs.caelestia-shell.homeManagerModules.default ];
       users.tmayet = import ../../home;
     };
   };
