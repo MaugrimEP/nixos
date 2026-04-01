@@ -1,9 +1,3 @@
 { ... }: {
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-    history.size = 1000000;
-};
+  imports = [ ./zsh.nix ];
 }
