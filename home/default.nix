@@ -9,5 +9,6 @@
     ./cli-apps
     ./gui-apps
     ./shells
+    ./services
   ];
 }

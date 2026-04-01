@@ -8,6 +8,7 @@
     ghostscript
     inotify-tools
     just
+    rclone
     ripgrep
     tectonic
     television
