@@ -12,6 +12,7 @@
     google-chrome
     jetbrains.pycharm
     obsidian
+    spotify
     vscode
     zoom-us
     zotero
