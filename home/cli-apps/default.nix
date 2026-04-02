@@ -21,6 +21,11 @@
     yazi
   ];
 
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   imports = [
     ./ghostscript.nix
     ./git.nix
