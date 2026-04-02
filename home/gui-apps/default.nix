@@ -3,6 +3,7 @@
   imports = [
     ./caelestia.nix
     ./gnome.nix
+    ./hyprland.nix
     ./kitty
   ];
 
