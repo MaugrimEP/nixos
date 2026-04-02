@@ -17,7 +17,8 @@ let
       sleep 5
       echo "rclone-gdrive: change detected, syncing..."
       ${pkgs.rclone}/bin/rclone bisync "$LOCAL" "$REMOTE" \
-        --resilient --recover --max-lock 2m || true
+        --resilient --recover --max-lock 2m \
+        --conflict-resolve newer --conflict-loser delete || true
     done
   '';
 
@@ -26,7 +27,8 @@ let
     REMOTE="${remoteVault}"
     mkdir -p "$LOCAL"
     exec ${pkgs.rclone}/bin/rclone bisync "$LOCAL" "$REMOTE" \
-      --resilient --recover --max-lock 2m
+      --resilient --recover --max-lock 2m \
+      --conflict-resolve newer --conflict-loser delete
   '';
 in
 {
