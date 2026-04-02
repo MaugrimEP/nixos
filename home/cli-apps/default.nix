@@ -4,6 +4,7 @@
     ascii-image-converter
     bat
     claude-code
+    fastfetch
     fzf
     ghostscript
     inotify-tools
