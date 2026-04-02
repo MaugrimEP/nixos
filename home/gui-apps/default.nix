@@ -5,6 +5,7 @@
     ./gnome.nix
     ./hyprland.nix
     ./kitty
+    ./zotero.nix
   ];
 
   home.packages = with pkgs; [
