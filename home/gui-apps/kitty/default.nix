@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   programs.kitty = {
     enable = true;
+    themeFile = "Catppuccin-Mocha";
     extraConfig = builtins.concatStringsSep "\n" [
       (builtins.readFile ./kitty.conf)
       (builtins.readFile ./font.conf)

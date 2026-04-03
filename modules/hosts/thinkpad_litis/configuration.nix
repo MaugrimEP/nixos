@@ -86,8 +86,14 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 # Enable zsh at system level (required for login shell)
 programs.zsh.enable = true;
 
+# Askpass program for SSH agent confirmation prompts
+programs.ssh.askPassword = "${pkgs.lxqt.lxqt-openssh-askpass}/bin/lxqt-openssh-askpass";
+
 # Enable nix-ld for running unpatched dynamic binaries
 programs.nix-ld.enable = true;
+programs.nix-ld.libraries = with pkgs; [
+  python3
+];
 
 # Fonts
 fonts.packages = with pkgs; [

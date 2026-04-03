@@ -4,13 +4,16 @@
     ascii-image-converter
     bat
     claude-code
+    python3Packages.debugpy
     fastfetch
     fzf
     ghostscript
     inotify-tools
     just
     rclone
+    basedpyright
     ripgrep
+    ruff
     tectonic
     television
     tree
@@ -31,5 +34,6 @@
     ./ghostscript.nix
     ./git.nix
     ./neovim.nix
+    ./ssh.nix
   ];
 }
