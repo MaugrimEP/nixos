@@ -15,6 +15,11 @@
     initContent = ''
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
       fastfetch
+
+      # Always use block cursor
+      echo -ne '\e[2 q'
+      zle-line-init() { echo -ne '\e[2 q' }
+      zle -N zle-line-init
     '';
   };
 }

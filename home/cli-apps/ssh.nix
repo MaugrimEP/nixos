@@ -1,5 +1,9 @@
 { ... }:
 {
+  # DE-agnostic SSH agent (systemd user service).
+  # Replaces GNOME Keyring's gcr-ssh-agent which doesn't work on non-GNOME DEs.
+  services.ssh-agent.enable = true;
+
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
