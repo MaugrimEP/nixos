@@ -69,6 +69,13 @@
             // misc
             key <BKSL> { [ backslash, bar, notsign, brokenbar ] }; // \ | ¬ ¦
 
+            // Caps Lock → Ctrl+Shift (same as kitty_mod, works on both keyboards)
+            key <CAPS> {
+              type = "ONE_LEVEL",
+              symbols[Group1] = [ NoSymbol ],
+              actions[Group1] = [ SetMods(modifiers=Control+Shift) ]
+            };
+
             include "level3(ralt_switch)"
           };
         '';

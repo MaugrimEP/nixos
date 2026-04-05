@@ -101,6 +101,7 @@ fonts.packages = with pkgs; [
   liberation_ttf
   nerd-fonts.fira-code
   nerd-fonts.jetbrains-mono
+  noto-fonts-color-emoji
 ];
 
 system.stateVersion = "25.11";
