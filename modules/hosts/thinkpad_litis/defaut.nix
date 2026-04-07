@@ -5,6 +5,7 @@
       self.nixosModules.gnomeDesktop
       self.nixosModules.hyprlandDesktop
       self.nixosModules.kdeDesktop
+      self.nixosModules.niriDesktop
       self.nixosModules.homeManager
     ];
   };

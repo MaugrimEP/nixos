@@ -31,6 +31,7 @@
   };
 
   imports = [
+    ./fastfetch.nix
     ./ghostscript.nix
     ./git.nix
     ./neovim.nix
