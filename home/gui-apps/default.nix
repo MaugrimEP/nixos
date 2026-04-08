@@ -5,7 +5,6 @@
     ./gnome.nix
     ./hyprland.nix
     ./kitty
-    ./niri
     ./zotero.nix
   ];
 
