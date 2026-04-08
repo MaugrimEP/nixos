@@ -5,6 +5,11 @@
     {
       programs.niri.enable = true;
 
+      environment.systemPackages = with pkgs; [
+        grim slurp wl-clipboard tesseract imagemagick zbar curl
+        translate-shell wl-screenrec ffmpeg gifski
+      ];
+
       home-manager.users.tmayet = {
         xdg.configFile."niri/config.kdl".source = ./config.kdl;
         home.packages = [

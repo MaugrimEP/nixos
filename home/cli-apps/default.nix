@@ -2,16 +2,17 @@
 {
   home.packages = with pkgs; [
     ascii-image-converter
+    basedpyright
     bat
     claude-code
-    python3Packages.debugpy
     fastfetch
     fzf
     ghostscript
     inotify-tools
     just
+    manim
+    python3Packages.debugpy
     rclone
-    basedpyright
     ripgrep
     ruff
     tectonic

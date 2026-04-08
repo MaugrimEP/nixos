@@ -167,6 +167,25 @@
           "icon": "noctalia",
           "id": "ControlCenter",
           "useDistroLogo": false
+        },
+        {
+          "defaultSettings": {
+            "mode": "region"
+          },
+          "id": "plugin:screenshot"
+        },
+        {
+          "defaultSettings": {
+            "colorHistory": [],
+            "detectedRecorder": "",
+            "installedLangs": [
+              "eng"
+            ],
+            "paletteColors": [],
+            "selectedOcrLang": "eng",
+            "transAvailable": false
+          },
+          "id": "plugin:screen-toolkit"
         }
       ]
     },
@@ -194,7 +213,7 @@
     "animationSpeed": 1,
     "animationDisabled": false,
     "compactLockScreen": false,
-    "lockScreenAnimations": false,
+    "lockScreenAnimations": true,
     "lockOnSuspend": true,
     "showSessionButtonsOnLockScreen": true,
     "showHibernateOnLockScreen": false,
@@ -214,10 +233,10 @@
     "allowPasswordWithFprintd": false,
     "clockStyle": "custom",
     "clockFormat": "hh\\nmm",
-    "passwordChars": false,
+    "passwordChars": true,
     "lockScreenMonitors": [],
-    "lockScreenBlur": 0,
-    "lockScreenTint": 0,
+    "lockScreenBlur": 0.80,
+    "lockScreenTint": 0.20,
     "keybinds": {
       "keyUp": [
         "Up"
@@ -684,3 +703,4 @@
     ]
   }
 }
+ 

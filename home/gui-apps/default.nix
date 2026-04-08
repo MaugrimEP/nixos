@@ -2,6 +2,10 @@
 {
   imports = [
     ./caelestia.nix
+    ./defaults/gnome.nix
+    ./defaults/hyprland.nix
+    ./defaults/kde.nix
+    ./defaults/niri.nix
     ./gnome.nix
     ./hyprland.nix
     ./kitty
@@ -10,6 +14,8 @@
 
   home.packages = with pkgs; [
     blender
+    eog
+    evince
     firefox
     google-chrome
     jetbrains.pycharm
@@ -18,7 +24,9 @@
     spotify
     thunderbird
     vesktop
+    vlc
     vscode
+    wdisplays
     zoom-us
     zotero
   ];
