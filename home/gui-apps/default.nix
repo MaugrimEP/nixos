@@ -11,15 +11,15 @@
 
   home.packages = with pkgs; [
     blender
-    discord
     firefox
     google-chrome
     jetbrains.pycharm
     obsidian
+    smile
     spotify
     thunderbird
+    vesktop
     vscode
-    smile
     zoom-us
     zotero
   ];
