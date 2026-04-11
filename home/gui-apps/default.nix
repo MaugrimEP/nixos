@@ -27,6 +27,7 @@
     vlc
     vscode
     wdisplays
+    x11_ssh_askpass
     zoom-us
     zotero
   ];

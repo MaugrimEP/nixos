@@ -29,6 +29,9 @@
         file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
       }
     ];
+    shellAliases = {
+      cat = "bat";
+    };
     initContent = ''
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
       fastfetch

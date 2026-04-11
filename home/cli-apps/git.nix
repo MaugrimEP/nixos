@@ -4,6 +4,7 @@
     package = pkgs.git.override { withLibsecret = true; };
     settings = {
       credential.helper = "libsecret";
+      core.pager = "bat";
     };
   };
 }

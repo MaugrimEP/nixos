@@ -87,6 +87,11 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 # Enable zsh at system level (required for login shell)
 programs.zsh.enable = true;
 
+services.gnome.gnome-keyring.enable = true;
+security.pam.services.gdm.enableGnomeKeyring = true;
+security.pam.services.sddm.enableGnomeKeyring = true;
+security.pam.services.login.enableGnomeKeyring = true;
+
 # Askpass program for SSH agent confirmation prompts
 programs.ssh.askPassword = "${pkgs.lxqt.lxqt-openssh-askpass}/bin/lxqt-openssh-askpass";
 

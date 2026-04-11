@@ -29,16 +29,16 @@
     "widgets": {
       "left": [
         {
-          "colorizeSystemIcon": "none",
+          "colorizeSystemIcon": "error",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "rocket",
           "iconColor": "none",
           "id": "Launcher",
-          "useDistroLogo": false
+          "useDistroLogo": true
         },
         {
-          "clockColor": "none",
+          "clockColor": "primary",
           "customFont": "",
           "formatHorizontal": "HH:mm ddd, MMM dd",
           "formatVertical": "HH mm - dd MM",
@@ -53,17 +53,17 @@
           "id": "SystemMonitor",
           "showCpuCores": false,
           "showCpuFreq": false,
-          "showCpuTemp": true,
+          "showCpuTemp": false,
           "showCpuUsage": true,
           "showDiskAvailable": false,
           "showDiskUsage": false,
           "showDiskUsageAsPercent": false,
           "showGpuTemp": false,
-          "showLoadAverage": false,
+          "showLoadAverage": true,
           "showMemoryAsPercent": false,
           "showMemoryUsage": true,
-          "showNetworkStats": false,
-          "showSwapUsage": false,
+          "showNetworkStats": true,
+          "showSwapUsage": true,
           "textColor": "none",
           "useMonospaceFont": true,
           "usePadding": false
@@ -99,7 +99,7 @@
         {
           "characterCount": 2,
           "colorizeIcons": false,
-          "emptyColor": "secondary",
+          "emptyColor": "none",
           "enableScrollWheel": true,
           "focusedColor": "primary",
           "followFocusedScreen": false,
@@ -111,7 +111,7 @@
           "labelMode": "index",
           "occupiedColor": "secondary",
           "pillSize": 0.6,
-          "showApplications": false,
+          "showApplications": true,
           "showApplicationsHover": false,
           "showBadge": true,
           "showLabelsOnlyWhenOccupied": true,
@@ -142,8 +142,8 @@
           "hideIfIdle": false,
           "hideIfNotDetected": true,
           "id": "Battery",
-          "showNoctaliaPerformance": false,
-          "showPowerProfiles": false
+          "showNoctaliaPerformance": true,
+          "showPowerProfiles": true
         },
         {
           "displayMode": "onhover",
@@ -235,8 +235,8 @@
     "clockFormat": "hh\\nmm",
     "passwordChars": true,
     "lockScreenMonitors": [],
-    "lockScreenBlur": 0.80,
-    "lockScreenTint": 0.20,
+    "lockScreenBlur": 0.8,
+    "lockScreenTint": 0.2,
     "keybinds": {
       "keyUp": [
         "Up"
@@ -703,4 +703,3 @@
     ]
   }
 }
- 

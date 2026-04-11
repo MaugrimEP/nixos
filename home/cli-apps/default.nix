@@ -1,5 +1,11 @@
 { pkgs, ... }:
 {
+
+  home.sessionVariables = {
+    MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+    PAGER = "bat";
+  };
+
   home.packages = with pkgs; [
     ascii-image-converter
     basedpyright
