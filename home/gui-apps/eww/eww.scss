@@ -1,0 +1,37 @@
+* {
+  all: unset;
+  font-family: "Anurati";
+}
+
+.clock-box {
+  padding: 8px 0;
+}
+
+.clock-day {
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: 24px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+  margin-right: -24px; /* compensate letter-spacing trailing gap */
+}
+
+.clock-date {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 9px;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  margin-top: 6px;
+  margin-right: -9px;
+}
+
+.clock-time {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  margin-top: 4px;
+  margin-right: -6px;
+}

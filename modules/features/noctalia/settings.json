@@ -108,13 +108,13 @@
           "hideUnoccupied": false,
           "iconScale": 0.8,
           "id": "Workspace",
-          "labelMode": "index",
+          "labelMode": "index+name",
           "occupiedColor": "secondary",
           "pillSize": 0.6,
           "showApplications": true,
           "showApplicationsHover": false,
           "showBadge": true,
-          "showLabelsOnlyWhenOccupied": true,
+          "showLabelsOnlyWhenOccupied": false,
           "unfocusedIconsOpacity": 1
         }
       ],
@@ -127,14 +127,6 @@
           "hidePassive": false,
           "id": "Tray",
           "pinned": []
-        },
-        {
-          "hideWhenZero": false,
-          "hideWhenZeroUnread": false,
-          "iconColor": "none",
-          "id": "NotificationHistory",
-          "showUnreadBadge": true,
-          "unreadBadgeColor": "primary"
         },
         {
           "deviceNativePath": "__default__",
@@ -161,12 +153,6 @@
         },
         {
           "defaultSettings": {
-            "mode": "region"
-          },
-          "id": "plugin:screenshot"
-        },
-        {
-          "defaultSettings": {
             "colorHistory": [],
             "detectedRecorder": "",
             "installedLangs": [
@@ -177,6 +163,12 @@
             "transAvailable": false
           },
           "id": "plugin:screen-toolkit"
+        },
+        {
+          "id": "plugin:keybind-cheatsheet"
+        },
+        {
+          "id": "plugin:usb-drive-manager"
         },
         {
           "colorizeDistroLogo": false,
@@ -685,20 +677,7 @@
     "monitorWidgets": [
       {
         "name": "eDP-1",
-        "widgets": [
-          {
-            "clockColor": "none",
-            "clockStyle": "digital",
-            "customFont": "",
-            "format": "HH:mm\\nd MMMM yyyy",
-            "id": "Clock",
-            "roundedCorners": true,
-            "showBackground": true,
-            "useCustomFont": false,
-            "x": 50,
-            "y": 50
-          }
-        ]
+        "widgets": []
       }
     ]
   }

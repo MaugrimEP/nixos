@@ -3,6 +3,7 @@
   imports = [
     ./caelestia.nix
     ./defaults/gnome.nix
+    ./eww.nix
     ./defaults/hyprland.nix
     ./defaults/kde.nix
     ./defaults/niri.nix

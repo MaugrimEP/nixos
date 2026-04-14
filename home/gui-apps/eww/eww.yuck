@@ -1,0 +1,38 @@
+(defpoll clock-time :interval "1s"
+  "date '+%H:%M'")
+
+(defpoll clock-date :interval "60s"
+  "date '+%d %b %Y' | tr '[:lower:]' '[:upper:]'")
+
+(defpoll clock-day :interval "60s"
+  "date '+%A' | tr '[:lower:]' '[:upper:]'")
+
+(defwidget desktop-clock []
+  (box :class "clock-box" :orientation "v" :space-evenly false :halign "center"
+    (label :class "clock-day"  :halign "center" :text clock-day)
+    (label :class "clock-date" :halign "center" :text clock-date)
+    (label :class "clock-time" :halign "center" :text "─  ${clock-time}  ─")))
+
+(defwindow desktop-clock-0
+  :monitor 0
+  :geometry (geometry :x "0" :y "48px" :width "100%" :anchor "top center")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (desktop-clock))
+
+(defwindow desktop-clock-1
+  :monitor 1
+  :geometry (geometry :x "0" :y "48px" :width "100%" :anchor "top center")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (desktop-clock))
+
+(defwindow desktop-clock-2
+  :monitor 2
+  :geometry (geometry :x "0" :y "48px" :width "100%" :anchor "top center")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (desktop-clock))

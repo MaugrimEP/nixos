@@ -33,6 +33,7 @@
     yaml-language-server
     yamllint
     yazi
+    zmk-studio
   ];
 
   programs.zoxide = {

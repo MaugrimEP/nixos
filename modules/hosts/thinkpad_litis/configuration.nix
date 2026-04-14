@@ -5,6 +5,7 @@ imports = [
   self.nixosModules.thinkpad_litisHardware
   self.nixosModules.mykeyboard
   self.nixosModules.nvidia
+  self.nixosModules.fonts
 ];
 
 # Bootloader.
