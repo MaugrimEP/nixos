@@ -4,23 +4,23 @@
     "barType": "simple",
     "position": "left",
     "monitors": [],
-    "density": "default",
+    "density": "spacious",
     "showOutline": false,
-    "showCapsule": true,
+    "showCapsule": false,
     "capsuleOpacity": 1,
     "capsuleColorKey": "none",
     "widgetSpacing": 6,
-    "contentPadding": 2,
-    "fontScale": 1,
+    "contentPadding": 4,
+    "fontScale": 1.07,
     "enableExclusionZoneInset": true,
-    "backgroundOpacity": 0.93,
-    "useSeparateOpacity": false,
+    "backgroundOpacity": 0,
+    "useSeparateOpacity": true,
     "floating": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
     "frameRadius": 12,
-    "outerCorners": true,
+    "outerCorners": false,
     "hideOnOverview": false,
     "displayMode": "always_visible",
     "autoHideDelay": 500,
@@ -160,15 +160,6 @@
           "textColor": "none"
         },
         {
-          "colorizeDistroLogo": false,
-          "colorizeSystemIcon": "none",
-          "customIconPath": "",
-          "enableColorization": false,
-          "icon": "noctalia",
-          "id": "ControlCenter",
-          "useDistroLogo": false
-        },
-        {
           "defaultSettings": {
             "mode": "region"
           },
@@ -186,6 +177,15 @@
             "transAvailable": false
           },
           "id": "plugin:screen-toolkit"
+        },
+        {
+          "colorizeDistroLogo": false,
+          "colorizeSystemIcon": "none",
+          "customIconPath": "",
+          "enableColorization": false,
+          "icon": "noctalia",
+          "id": "ControlCenter",
+          "useDistroLogo": false
         }
       ]
     },
@@ -314,13 +314,13 @@
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
-    "viewMode": "single",
+    "viewMode": "recursive",
     "setWallpaperOnAllMonitors": true,
     "fillMode": "crop",
     "fillColor": "#000000",
     "useSolidColor": false,
     "solidColor": "#1a1a2e",
-    "automationEnabled": false,
+    "automationEnabled": true,
     "wallpaperChangeMode": "random",
     "randomIntervalSec": 300,
     "transitionDuration": 1500,

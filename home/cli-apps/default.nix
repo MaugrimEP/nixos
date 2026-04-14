@@ -17,6 +17,7 @@
     inotify-tools
     just
     manim
+    nodePackages.prettier
     python3Packages.debugpy
     rclone
     ripgrep
@@ -29,6 +30,8 @@
     uv
     vim
     wget
+    yaml-language-server
+    yamllint
     yazi
   ];
 

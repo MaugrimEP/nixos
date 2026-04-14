@@ -87,6 +87,8 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 # Enable zsh at system level (required for login shell)
 programs.zsh.enable = true;
 
+services.displayManager.defaultSession = "niri";
+
 services.gnome.gnome-keyring.enable = true;
 security.pam.services.gdm.enableGnomeKeyring = true;
 security.pam.services.sddm.enableGnomeKeyring = true;
