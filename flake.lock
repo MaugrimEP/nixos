@@ -167,6 +167,22 @@
         "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
       }
     },
+    "qylock": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1776139224,
+        "narHash": "sha256-OTQQFKyhH3XkDrDn6+boJn10XYuXQTpOvPX9HSS74Kg=",
+        "owner": "Darkkal44",
+        "repo": "qylock",
+        "rev": "a45a5ec4a66e42a86b83fac7d00159b598851f58",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Darkkal44",
+        "repo": "qylock",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "caelestia-shell": "caelestia-shell",
@@ -174,6 +190,7 @@
         "home-manager": "home-manager",
         "import-tree": "import-tree",
         "nixpkgs": "nixpkgs",
+        "qylock": "qylock",
         "wrapper-modules": "wrapper-modules"
       }
     },
