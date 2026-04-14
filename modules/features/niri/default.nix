@@ -11,13 +11,11 @@
         export QML_XHR_ALLOW_FILE_READ=1
         export XDG_SESSION_TYPE=wayland
 
-        config="$HOME/.config/qylock/theme"
         if [ -n "$1" ]; then
           export QS_THEME="$1"
-        elif [ -f "$config" ]; then
-          export QS_THEME=$(cat "$config")
         else
-          export QS_THEME="pixel-coffee"
+          themes=("${themesSrc}"/*)
+          export QS_THEME=$(basename "''${themes[RANDOM % ''${#themes[@]}]}")
         fi
 
         export QS_THEME_PATH="${themesSrc}/$QS_THEME"
@@ -40,7 +38,6 @@
 
       home-manager.users.tmayet = {
         xdg.configFile."niri/config.kdl".source = ./config.kdl;
-        home.file.".config/qylock/theme".text = "pixel-coffee";
         home.packages = [
           self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
           qylockLock
