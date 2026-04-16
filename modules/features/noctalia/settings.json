@@ -165,9 +165,29 @@
           "id": "plugin:screen-toolkit"
         },
         {
+          "defaultSettings": {
+            "autoHeight": true,
+            "cheatsheetData": [],
+            "columnCount": 3,
+            "detectedCompositor": "",
+            "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
+            "modKeyVariable": "$mod",
+            "niriConfigPath": "~/.config/niri/config.kdl",
+            "windowHeight": 0,
+            "windowWidth": 1400
+          },
           "id": "plugin:keybind-cheatsheet"
         },
         {
+          "defaultSettings": {
+            "autoMount": false,
+            "fileBrowser": "yazi",
+            "hideWhenEmpty": false,
+            "iconColor": "none",
+            "showBadge": false,
+            "showNotifications": true,
+            "terminalCommand": "kitty"
+          },
           "id": "plugin:usb-drive-manager"
         },
         {
@@ -301,8 +321,8 @@
   },
   "wallpaper": {
     "enabled": true,
-    "overviewEnabled": false,
-    "directory": "/home/tmayet/Pictures/Wallpapers",
+    "overviewEnabled": true,
+    "directory": "/home/tmayet/gdrive/Wallpapers/",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
@@ -319,7 +339,7 @@
     "transitionType": "random",
     "skipStartupTransition": false,
     "transitionEdgeSmoothness": 0.05,
-    "panelPosition": "follow_bar",
+    "panelPosition": "center",
     "hideWallpaperFilenames": false,
     "overviewBlur": 0.4,
     "overviewTint": 0.6,
@@ -486,7 +506,7 @@
     "bluetoothRssiPollIntervalMs": 60000,
     "networkPanelView": "wifi",
     "wifiDetailsViewMode": "grid",
-    "bluetoothDetailsViewMode": "grid",
+    "bluetoothDetailsViewMode": "list",
     "bluetoothHideUnnamedDevices": false,
     "disableDiscoverability": false,
     "bluetoothAutoConnect": true
