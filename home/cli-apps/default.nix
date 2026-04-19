@@ -17,7 +17,7 @@
     inotify-tools
     just
     manim
-    nodePackages.prettier
+    prettier
     python3Packages.debugpy
     rclone
     ripgrep

@@ -21,6 +21,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nvim-conf = {
+      url = "github:MaugrimEP/nvim-conf";
+      flake = false;
+    };
   };
 
   # import modules/ automatically
