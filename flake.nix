@@ -26,6 +26,8 @@
       url = "github:MaugrimEP/nvim-conf";
       flake = false;
     };
+
+    nixpkgs-nvim.url = "github:nixos/nixpkgs/a456c000a70a059ddf7d5492e16b85cf610a02e0";
   };
 
   # import modules/ automatically
