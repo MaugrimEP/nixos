@@ -1,0 +1,2 @@
+- [ ] fix pavucontrol bluetooth headset
+- [ ] fix wdisplays

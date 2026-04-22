@@ -21,6 +21,7 @@
     google-chrome
     jetbrains.pycharm
     obsidian
+    pavucontrol
     smile
     spotify
     thunderbird
