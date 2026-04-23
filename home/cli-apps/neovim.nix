@@ -14,9 +14,4 @@ in
 
   home.sessionVariables.EDITOR = "nvim";
   systemd.user.sessionVariables.EDITOR = "nvim";
-
-  home.shellAliases = {
-    vimdiff = "nvim -d";
-  };
-
 }

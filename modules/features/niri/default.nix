@@ -25,6 +25,14 @@
     {
       programs.niri.enable = true;
 
+      # xdg-desktop-portal is required for screen sharing on Wayland
+      # (Discord, Zoom, etc. use it to broker PipeWire screen capture sessions).
+      xdg.portal = {
+        enable = true;
+        extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+        config.niri.default = [ "gnome" "gtk" ];
+      };
+
       environment.systemPackages = with pkgs; [
         grim slurp wl-clipboard tesseract imagemagick zbar curl
         gst_all_1.gst-plugins-bad
