@@ -20,6 +20,8 @@
     firefox
     google-chrome
     jetbrains.pycharm
+    kdePackages.kolourpaint
+    krita
     obsidian
     pavucontrol
     smile
