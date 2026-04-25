@@ -8,7 +8,7 @@
     ./defaults/kde.nix
     ./defaults/niri.nix
     ./gnome.nix
-    ./hyprland.nix
+    ./hyprland
     ./kitty
     ./zotero.nix
   ];
