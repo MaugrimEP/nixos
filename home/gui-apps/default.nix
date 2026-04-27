@@ -22,6 +22,7 @@
     jetbrains.pycharm
     kdePackages.kolourpaint
     krita
+    libreoffice
     obsidian
     pavucontrol
     smile
