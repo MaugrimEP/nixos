@@ -242,6 +242,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "noctalia-shell"
 spawn-at-startup "sh" "-c" "eww daemon; eww open desktop-clock-0; eww open desktop-clock-1; eww open desktop-clock-2"
+spawn-at-startup "sh" "-c" "sleep 2 && kanshictl reload"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -344,6 +345,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+N hotkey-overlay-title="Open Browser: Chrome" { spawn "google-chrome-stable"; }
+    Mod+E hotkey-overlay-title="Open File Explorer" { spawn "nautilus"; }
     Mod+D hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     //Mod+D allow-inhibiting=false hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "qylock-lock"; }

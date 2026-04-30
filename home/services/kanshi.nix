@@ -55,6 +55,30 @@
           }
         ];
       };
+
+      # Laptop + Iiyama PL2776HD + Dell P2419H (current setup)
+      triple_iiyama = {
+        outputs = [
+          {
+            criteria = "eDP-1";
+            mode = "1920x1200@60.003";
+            scale = 1.0;
+            position = "1920,0";
+          }
+          {
+            criteria = "Iiyama North America PL2776HD 1112213001171";
+            mode = "1920x1080@60.000";
+            scale = 1.0;
+            position = "3840,0";
+          }
+          {
+            criteria = "Dell Inc. DELL P2419H 75L7PM2";
+            mode = "1920x1080@60.000";
+            scale = 1.0;
+            position = "5760,0";
+          }
+        ];
+      };
     };
   };
 }

@@ -33,11 +33,16 @@
         extraPortals = [
           pkgs.xdg-desktop-portal-gtk
           pkgs.xdg-desktop-portal-gnome
+          pkgs.kdePackages.xdg-desktop-portal-kde
         ];
-        config.niri.default = [
-          "gnome"
-          "gtk"
-        ];
+        config.niri = {
+          default = [
+            "gnome"
+            "gtk"
+          ];
+          "org.freedesktop.impl.portal.AppChooser" = "kde";
+          "org.freedesktop.impl.portal.FileChooser" = "kde";
+        };
       };
 
       environment.systemPackages = with pkgs; [
