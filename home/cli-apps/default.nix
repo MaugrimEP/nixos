@@ -42,6 +42,7 @@
   };
 
   imports = [
+    ./eza.nix
     ./fastfetch.nix
     ./ghostscript.nix
     ./git.nix
