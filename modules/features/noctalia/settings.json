@@ -9,7 +9,7 @@
     "showCapsule": true,
     "capsuleOpacity": 0.6900000000000001,
     "capsuleColorKey": "none",
-    "widgetSpacing": 30,
+    "widgetSpacing": 0,
     "contentPadding": 30,
     "fontScale": 1.07,
     "enableExclusionZoneInset": false,
@@ -29,6 +29,7 @@
       "left": [
         {
           "colorizeSystemIcon": "error",
+          "colorizeSystemText": "none",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "rocket",
@@ -177,6 +178,7 @@
         {
           "colorizeDistroLogo": false,
           "colorizeSystemIcon": "none",
+          "colorizeSystemText": "none",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "noctalia",
