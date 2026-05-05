@@ -95,6 +95,9 @@ security.pam.services.gdm.enableGnomeKeyring = true;
 security.pam.services.sddm.enableGnomeKeyring = true;
 security.pam.services.login.enableGnomeKeyring = true;
 
+# SSH agent (starts a per-user ssh-agent on login)
+programs.ssh.startAgent = true;
+
 # Askpass program for SSH agent confirmation prompts
 programs.ssh.askPassword = "${pkgs.lxqt.lxqt-openssh-askpass}/bin/lxqt-openssh-askpass";
 
