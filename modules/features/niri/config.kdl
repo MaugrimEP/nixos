@@ -278,6 +278,15 @@ animations {
     // slowdown 3.0
 }
 
+// Global blur defaults. Windows/layers must opt in via background-effect { blur true }
+// in their respective rules, and the surface must be semitransparent for it to be visible.
+blur {
+    passes 2
+    offset 1
+    noise 0.02
+    saturation 1.5
+}
+
 // Set the overview wallpaper on the backdrop.
 layer-rule {
   match namespace="^noctalia-overview*"
@@ -295,6 +304,14 @@ window-rule {
 
 window-rule {
     draw-border-with-background false
+}
+
+// Blur the background of semitransparent kitty terminals.
+window-rule {
+    match app-id=r#"^kitty$"#
+    background-effect {
+        blur true
+    }
 }
 
 // Work around WezTerm's initial configure bug
@@ -349,7 +366,7 @@ binds {
     Mod+E hotkey-overlay-title="Open File Explorer" { spawn "nautilus"; }
     Mod+D hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     //Mod+D allow-inhibiting=false hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "qylock-lock"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "qylock-lock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.

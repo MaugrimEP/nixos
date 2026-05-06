@@ -34,6 +34,7 @@
     vscode
     wdisplays
     x11_ssh_askpass
+    xournalpp
     zoom-us
     zotero
   ];
